@@ -12,18 +12,75 @@
     <title>Engelbert Fanor Juárez Bonilla</title>
   </head>
   <body>
+    <!--BARRA DE NAVEGACION-->
     <nav class="navbar navbar-light">
         <a class="navbar-brand" href="index.html">FANOR</a>
     </nav>
+    <!--HERO-->
     <div id="hero" class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <img src="https://c-sf.smule.com/sf/s80/arr/66/47/509fdb30-c6e8-4de1-ad1e-5a1d7179a128.jpg" alt="Makise Kurisu">
         <h1 class="text-center mt-4">Engelbert Fanor Juárez Bonilla</h1>
-        <i class="fas fa-star fa-2x text-center"></i>
+        <div class="star my-4 d-flex flex-row align-items-center justify-content-center">
+            <hr class="m-0 p-0 mr-3">
+            <i class="fas fa-star fa-2x text-center"></i>
+            <hr class="m-0 p-0 ml-3">
+        </div>
         <p class="text-center mt-4">Web Developer - HTML - CSS - JS</p>
+    </div>
+    <!--Portafolio-->
+    <div id="portfolio" class="container-fluid p-5"><!--p-5 es el padding-->
+        <h1 class="text-center mt-5">PORTFOLIO</h1>
+
+        <div class="star my-4 d-flex flex-row align-items-center justify-content-center">
+            <hr class="m-0 p-0 mr-3">
+            <i class="fas fa-star fa-2x text-center"></i>
+            <hr class="m-0 p-0 ml-3">
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-12 col-md-6 col-lg-4 p-4 my-1">
+                <div class="project d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="https://cdn-images-1.medium.com/max/1600/1*QoR3rxWIbnf5wmF_IuAHqQ.png" alt="git">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-4 my-1"><!--my es el margen en el eje y-->
+                <div class="project d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="data:image/png;base64,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" alt="html5">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-4 my-1">
+                <div class="project d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5zBR9GltYR3gGL7pHLSMWnB12JSAeiJPqaxCd4oi7CTnwYbuB" alt="css3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about" class="container-fluid p-5">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <h1 class="col-12 text-center">ABOUT</h1>
+            <div class="star my-4 d-flex flex-row align-items-center justify-content-center">
+                <hr class="m-0 p-0 mr-3">
+                <i class="fas fa-star fa-2x text-center"></i>
+                <hr class="m-0 p-0 ml-3">
+            </div>
+            <p class="col-12 text-left mt-3 px-4">
+                Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+            </p>
+            <p class="col-12 text-left px-4">
+                Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+            </p>
+            <a class="col-12 col-md-8 col-lg-5" href="https://github.com/EFJB" target="_blank">
+                <button type="button" class="btn btn-light col-12 mt-4">
+                    <i class="fab fa-github mr-1"></i>
+                    Download Now!
+                </button>
+            </a>
+        </div>
     </div>
     
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');        
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');  
+        @import url('https://fonts.googleapis.com/css?family=Lato');      
         .navbar {
             background-color: #D49A6A;
             height: 106px;
@@ -37,7 +94,7 @@
             font-weight: 700;
         }
         #hero {
-            background-color: #AA5585;
+            background-color: #aa5585;
             height: 700px;
         }
         #hero img {
@@ -58,6 +115,61 @@
         }
         #hero .fa-star {
             color: white;
+        }
+        #portfolio .project {
+            height: 300px;
+            background-color: #1ea4b4;
+        }
+        #portfolio h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #393e46;
+            font-weight: 700;
+        }
+        #hero .star hr {
+            height: 5px;
+            width: 100px;
+            background-color: white;
+        }
+        #hero .star .fa-star {
+            color: white;
+        }
+        #portfolio .star hr {
+            height: 5px;
+            width: 100px;
+            background-color: #393e46;
+        }
+        #portfolio .star .fa-star {
+            color: #393e46;
+        }
+        #about {
+            background-color: #D49A6A;
+            color: white;
+        }
+        #about .star hr {
+            height: 5px;
+            width: 100px;
+            background-color: white;
+        }
+        #about .star .fa-star {
+            color: white;
+        }
+        #about p {
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-weight: 22px;
+        }
+        #about button {
+            background-color: #D49A6A;
+            border: 2px solid white;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #about button:hover {
+            background-color: white;
+            color: black;
         }
     </style>
     <!-- Optional JavaScript -->
